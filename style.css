@@ -1,0 +1,593 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px;
+    position: fixed;
+    z-index: 2;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    margin-left: 6px;
+}
+
+.nav-items {
+    margin: 0 15px;
+
+}
+
+.nav {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+nav button {
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(170, 210, 54);
+    padding: 9px 34px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-dropdown {
+    width: 190px;
+    border-top: 2px solid rgb(170, 210, 54);
+    background-color: #fff;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 18px 18px;
+    position: absolute;
+    right: 400px;
+    top: 55px;
+    display: none;
+}
+
+.dropdown-wrapper {
+    display: inline;
+}
+
+.dropdown-wrapper:hover .menu-dropdown {
+    display: block;
+}
+
+
+.menu-dropdown a {
+    display: block;
+    color: #000;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .nav {
+        display: none;
+    }
+
+    nav button {
+        margin-right: 0;
+    }
+}
+
+/* End of Header */
+
+/* Section one - Landing Page */
+
+#landing-page {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.textbox h1 {
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 8.8px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.textbox p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #8b8b99;
+    margin-top: 10px;
+}
+
+/* End of Section one - Landing Page */
+
+/* Section Two - Steps Page */
+#steps-page {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    color: #fff;
+}
+.steps {
+    width: 25%;
+    padding: 112px 48px;
+}
+
+.steps i {
+    font-size: 96px;
+    transition: 0.6s;
+}
+
+.steps:hover i {
+    transform: scale(1.15);
+}
+
+.steps h4 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.steps p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+}
+
+#step1 {
+    background-color: #5acda6;
+}
+
+#step2 {
+    background-color: #91ac41;
+}
+
+#step3 {
+    background-color: #e4b476;
+}
+
+#step4 {
+    background-color: #f69dad;
+}
+
+@media screen and (max-width: 900px) {
+    #steps-page {
+        flex-direction: column;
+    }
+    .steps {
+        width: 100%;
+    }
+}
+
+/* End of section two - Steps page */
+
+/* Section three - Store */
+#store {
+    background-color: #f7eee2;
+    padding: 65px 135px;
+    width: 100%;
+}
+
+.textarea {
+    text-align: center;
+}
+
+.textarea p:first-child {
+    margin-top: 35px;
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+}
+
+.textarea h1 {
+    font-size: 44px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.textarea p:last-child {
+    font-size: 16px;
+    font-weight: 500;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+}
+
+.general-container {
+    display: flex;
+    margin-top: 55px;
+    justify-content: center;
+}
+
+.quality-container {
+    width: 280px;
+    padding: 30px;
+    text-align: center;
+}
+
+.circle {
+    background-color: #e3b375;
+    width: 140px;
+    height: 140px;
+    position: relative;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.quality-container:hover .circle {
+    transform: scale(1.1);
+}
+
+.circle i {
+    font-size: 60px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.quality-container h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 22px;
+    margin-bottom: 20px;
+}
+
+.quality-container p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 550;
+    color: #8b8b99;
+}
+
+@media screen and (max-width: 900px) {
+    .general-container {
+        flex-direction: column;
+    
+    }
+    .quality-container {
+        width: 100%;
+    }
+
+}
+
+/* End of section three - Store */
+
+/* Section four - Shop */
+
+#shop {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;    
+}
+
+.review {
+    width: 350px;
+    background-color: #f5f6fb;
+    text-align: center;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    padding: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1px solid #91ac41;
+}
+
+.review img {
+    border-radius: 50%;
+    width: 80px;
+}
+
+.review p:nth-child(2) {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #8b8b99;
+    font-style: italic;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.review h1 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.review p:last-child {
+    font-size: 12px;
+    color: #8b8b99;
+    font-style: italic;
+}
+
+@media screen and (max-width: 900px) {
+    .review-container {
+        flex-direction: column;
+    }
+    .review {
+        width: 100%;
+        margin: 8px 0;
+    }
+}
+
+
+/* End of Section four - Shop */
+
+/* Section five - Subscribe */
+#subscribe {
+    display: flex;
+}
+
+.left-sect {
+    width: 67%;
+    height: 90vh;
+    background-image: url(https://mobirise.com/extensions/organicamp/assets/images/19.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.right-sect {
+    width: 33%;
+    height: 90vh;
+    background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png);
+    background-size: cover;
+}
+
+.email-form {
+    width: 55%;
+    margin-top: 110px;
+    margin-left: 120px;
+}
+
+.email-form h1 {
+    font-size: 50px;
+}
+
+.email-form p {
+    color: #8b8b99;
+}
+
+.email-input {
+    width: 100%;
+    padding: 15px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+.subscribe-btn {
+    width: 160px;
+    background-color: #f69dad;
+    color: #fff;
+    border: none;
+    padding: 18px;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid #f69dad;
+}
+
+.subscribe-btn:hover {
+    background-color: transparent;
+    color: #f69dad;
+}
+
+@media screen and (max-width: 900px) {
+    #subscribe {
+        flex-direction: column;
+    }
+    .left-sect {
+        width: 100%;
+    }
+    .right-sect {
+        width: 100%;
+    }
+    .email-form {
+        width: 70%;
+    }
+    .email-input {
+        width: 80%;
+    }
+}
+
+/* End of section five - subscribe */
+
+/* Section six - stats */
+#stats {
+    background-color: #f5f6fb;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 70px;
+}
+
+.feedback {
+   margin: 8px 90px;
+}
+
+.feedback h1 {
+    font-size: 50px;
+}
+
+.feedback p {
+    color: #57e3b5;
+    font-size: 14px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 900px) {
+    #stats {
+        flex-direction: column;
+    }
+}
+
+/* End of section six - stats */
+
+/* Section seven - video */
+#video {
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+}
+
+#video h1 {
+    color: #8b8b99;
+    font-size: 44px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+iframe {
+    width: 700px;
+    height: 450px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+#video hr {
+    border: 1px solid #e4b476;
+    margin: 5px auto;
+    width: 100px;
+}
+
+/* End of section seven - video */
+
+/* Section eight - Contact */
+
+#contact {
+    display: flex;
+    padding: 60px 0;
+    justify-content: space-evenly;
+}
+.address {
+    width: 550px;
+    padding: 0 25px;
+}
+
+.address p:first-child {
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+}
+
+.address h1 {
+    font-size: 44px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.address p {
+    color: #8b8b99;
+}
+
+.address h3 {
+    font-size: 23px;
+    margin-top: 30px;
+}
+
+.contact-form {
+    width: 460px;
+    padding: 0 25px;
+}
+
+.contact-form p:first-child {
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+}
+
+.contact-form h1 {
+    font-size: 44px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    color: #8b8b99;
+    font-size: 17px;
+}
+
+.input-form {
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding: 17px;
+    margin: 8px 0;
+    border: 1px solid rgba(139,139,153,0.2);
+    border-radius: 5px;
+    outline: none;
+}
+
+.submit-btn2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(170, 210, 54);
+    padding: 9px 34px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.line {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    #contact {
+        flex-direction: column;
+    }
+
+    .address {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+/* End of section eight - contact */
+
+/*  Footer */
+footer {
+    width: 100%;
+    background-color: #232323;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+}
