@@ -184,7 +184,7 @@ nav button {
 /* Section three - Store */
 #store {
     background-color: #f7eee2;
-    padding: 65px 135px;
+    padding: 65px 0;
     width: 100%;
 }
 
@@ -213,8 +213,9 @@ nav button {
 }
 
 .general-container {
+    width: 75%;
     display: flex;
-    margin-top: 55px;
+    margin: 55px auto;
     justify-content: center;
 }
 
@@ -279,14 +280,15 @@ nav button {
 #shop {
     padding-top: 50px;
     padding-bottom: 80px;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .review-container {
+    width: 75%;
     display: flex;
     justify-content: center;
-    margin-top: 75px;    
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;    
 }
 
 .review {
@@ -430,11 +432,11 @@ nav button {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 100px 70px;
+    padding: 100px 0;
 }
 
 .feedback {
-   margin: 8px 90px;
+   margin: 8px 80px;
 }
 
 .feedback h1 {
