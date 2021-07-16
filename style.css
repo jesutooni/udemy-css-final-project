@@ -418,6 +418,8 @@ nav button {
     }
     .email-form {
         width: 70%;
+        margin-top: 50px;
+        margin-left: 50px;
     }
     .email-input {
         width: 80%;
@@ -460,7 +462,7 @@ nav button {
 /* Section seven - video */
 #video {
     width: 100%;
-    padding: 50px 15px;
+    padding: 50px 0;
     text-align: center;
 }
 
